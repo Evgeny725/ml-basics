@@ -1,0 +1,6 @@
+first string
+second string
+third string
+FIRST STRING
+SECOND STRING
+THIRD STRING
