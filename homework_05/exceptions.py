@@ -11,19 +11,19 @@ class VehicleError(Exception):
 
 
 class NotEnoughFuel(VehicleError):
-    print('Not enough fuel to reach the destination')
+    #print('Not enough fuel to reach the destination')
     pass
 
 
 class CargoOverload(VehicleError):
-    print('Maximum weight for this vehicle is ..')
+    #print('Maximum weight for this vehicle is ..')
     pass
 
 
 class LowFuelError(VehicleError):
-    print('Low fuel. Please refuel the vehicle')
+    #print('Low fuel. Please refuel the vehicle')
     pass
 
 class NotStartedError(VehicleError):
-    print('Need to start engine before moving on')
+    #print('Need to start engine before moving on')
     pass

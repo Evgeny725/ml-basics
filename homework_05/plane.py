@@ -36,9 +36,19 @@ class Plane(Vehicle):
         self.cargo = self._initial_cargo
         return self.cargo
 
+    def __repr__(self):
+        return (f'vehicle: {self.type}, initial_cargo: {self.cargo}, \n'
+                    f'  cargo: {self.cargo}, max_cargo: {self.max_cargo}')
+
 
     """
 объявите метод remove_all_cargo, который обнуляет значение cargo и возвращает значение cargo, 
 которое было до обнуления
->> тут не очень понял зачем обнулять чтобы потом вернуть исходное значение, пока что сделал как понял
+    >> тут не очень понял зачем обнулять, чтобы потом вернуть исходное значение, пока что сразу сделал 
+    возврат исходного значения
 """
+
+plane123 = Plane()
+if __name__ == '__main__':
+    print(plane123)
+

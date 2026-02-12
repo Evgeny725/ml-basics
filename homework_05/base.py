@@ -17,9 +17,10 @@ class Vehicle(ABC):
         self.weight = None
         self.started = False
         self.fuel = 100
-        self.fuel_consumption = 10
+        self.fuel_consumption = 10 #на 100 км
         self.location = None
-        self.odometer = 0
+        self.odometer = 0.0
+        self.type = self.__class__.__name__.lower()
 
 
     """добавьте метод start. 
@@ -43,11 +44,12 @@ class Vehicle(ABC):
       что топлива достаточно для преодоления переданной дистанции (вплоть до полного расхода), 
       и изменяет количество оставшегося топлива, иначе выкидывает исключение `exceptions.NotEnoughFuel`"""
     def move(self, distance):
+        #distance: 1 = 1km, 10 = 10km
         if not self.started:
             raise NotStartedError()
         else:
-            fuel_needed = distance * self.fuel_consumption
-            if fuel_needed < self.fuel:
+            fuel_needed = distance * self.fuel_consumption / 100
+            if fuel_needed > self.fuel:
                 raise NotEnoughFuel()
             else:
                 self.location = 'new_location'
@@ -58,3 +60,10 @@ class Vehicle(ABC):
                     print(f'out of fuel. engine stopped')
                 return self.location, self.odometer
 
+    def __repr__(self):
+        return f'type: "{self.type}", fuel: {self.fuel}, location: {self.location}, odometer: {self.odometer} km'
+
+veh1 = Vehicle()
+veh1.start()
+veh1.move(50)
+print(veh1)
