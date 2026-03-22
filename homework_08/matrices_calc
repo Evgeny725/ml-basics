@@ -1,4 +1,4 @@
-
+\usepackage{amsmath}
 
 inline double $.  $$ E = mc^2 $$
 
