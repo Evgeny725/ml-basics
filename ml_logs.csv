@@ -44,3 +44,11 @@ date_time,model_name,scaler,accuracy,recall,precision,f1_score,train_time_second
 2026-06-11T04:11:24+03:00,CatBoost_lr0.08_depth9_iter1000,minmaxScaler,0.8245,0.7581,0.5634,0.6464,566.0675,0.4.3
 2026-06-11T10:50:32+03:00,LogisticRegression_C0.0001_ElasticNet(0.65)_balanced,standardScaler,0.7618,0.7266,0.4602,0.5634,25.32,0.4.3
 2026-06-11T10:51:00+03:00,LogisticRegression_C0.0001_ElasticNet(0.65)_balanced,minmaxScaler,0.5846,0.7051,0.2971,0.418,28.505,0.4.3
+2026-06-11T13:10:41+03:00,LogisticRegression_C0.0001_ElasticNet(0.66)_balanced,StandardScaler(),0.762,0.7268,0.4605,0.5638,10.029,0.5.0
+2026-06-11T13:15:17+03:00,LogisticRegression_C0.0001_ElasticNet(0.66)_balanced,StandardScaler(),0.762,0.7268,0.4605,0.5638,9.395,0.5.0
+2026-06-11T13:22:47+03:00,DecisionTree_depth8_balanced,StandardScaler(),0.8137,0.7771,0.5417,0.6383,3.662,0.5.0
+2026-06-11T14:02:03+03:00,LightGBM_lr0.1_leaves25_estimators100_scale_pos_weight2.5,StandardScaler(),0.8429,0.7297,0.6071,0.6628,3.633,0.5.0
+2026-06-11T14:30:00+03:00,LightGBM_lr0.09_leaves25_estimators150_maxdepth5_scale_pos_weight2.0,StandardScaler(),0.8537,0.6904,0.6439,0.6663,4.689,0.5.1
+2026-06-11T20:01:46+03:00,CatBoost_lr0.07_depth9_iter300_l2_leaf_reg_options4_scale_pos_weight2.0,StandardScaler(),0.8542,0.6819,0.6477,0.6644,102.785,0.5.1
+2026-06-11T20:31:06+03:00,CatBoost_lr0.07_depth8_iter300_l2_leaf_reg_options4_scale_pos_weight2.0,StandardScaler(),0.8535,0.6857,0.6446,0.6645,39.0227,0.5.2
+2026-06-11T22:01:55+03:00,CatBoost_lr0.06_depth8_iter400_l2_leaf_reg_options4_scale_pos_weight2.0,StandardScaler(),0.8538,0.685,0.6457,0.6647,53.6044,0.5.2
