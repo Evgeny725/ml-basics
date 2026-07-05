@@ -52,3 +52,6 @@ date_time,model_name,scaler,accuracy,recall,precision,f1_score,train_time_second
 2026-06-11T20:01:46+03:00,CatBoost_lr0.07_depth9_iter300_l2_leaf_reg_options4_scale_pos_weight2.0,StandardScaler(),0.8542,0.6819,0.6477,0.6644,102.785,0.5.1
 2026-06-11T20:31:06+03:00,CatBoost_lr0.07_depth8_iter300_l2_leaf_reg_options4_scale_pos_weight2.0,StandardScaler(),0.8535,0.6857,0.6446,0.6645,39.0227,0.5.2
 2026-06-11T22:01:55+03:00,CatBoost_lr0.06_depth8_iter400_l2_leaf_reg_options4_scale_pos_weight2.0,StandardScaler(),0.8538,0.685,0.6457,0.6647,53.6044,0.5.2
+2026-07-05T12:38:34+03:00,CatBoost_lr0.06_depth8_iter300_l2_leaf_reg_options7_scale_pos_weight2.0,StandardScaler(),0.8534,0.6873,0.6438,0.6648,36.402,0.5.5
+2026-07-05T14:05:37+03:00,CatBoost_lr0.06_depth8_iter300_l2_leaf_reg_options7_scale_pos_weight2.0,StandardScaler(),0.8534,0.6873,0.6438,0.6648,36.3941,0.5.5
+2026-07-05T14:05:43+03:00,CatBoost_lr0.06_depth8_iter300_TEST,StandardScaler,0.8528,0.6807,0.6438,0.6617,5.682,0.5.5
